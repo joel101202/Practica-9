@@ -1,3 +1,285 @@
+<!-- 
+<html>
+    <head>
+        <title>
+            Practica 2 js
+        </title>
+    </head>
+<body>
+    <script>
+        document.write("Mi nombre es Joel Abreu");
+        document.write('<br>');
+        document.write("Y tengo 17 años")
+    </script>
+</body>
+</html>
+-----------------------------------------------------
+<html>
+<head>
+    <title>Practica 3 js</title>
+</head>
+<body>
+    <script>
+        var empleado='Edgar';
+        var salario= 100000;
+        document.write(empleado);
+        document.write('<br>');
+        document.write(salario);
+      </script>
+</body>
+</html>
+------------------------------------------------------
+<html>
+<head>
+    <title>Practica 4 js</title>
+</head>
+<body>
+    <script>
+  var persona;
+  var correo;
+  persona=prompt('Inroduzca su nombre:','');
+  correo=prompt('Introduzca su correo:','');
+  document.write('Tu nombre es ');
+  document.write(persona);
+  document.write('<br>');
+  document.write('Y tu correo es ');
+  document.write(correo);
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------------------
+<html>
+<head>
+    <title>Practica 5 js</title>
+</head>
+<body>
+    <script>
+    //PROGRAMA 1
+        var ALC=prompt('PROGRAMA 1, presione ok para continuar...');
+        var LC=prompt('Escribe el lado del cuadrado','');
+        var perimetro=parseInt(LC)+parseInt(LC)+parseInt(LC)+parseInt(LC);
+        document.write('El perimetro es ');
+        document.write(perimetro);
+    //PROGRAMA 2
+        var ALC=prompt('PROGRAMA 2, presione ok para continuar...');
+        var N1=prompt('Intrudozca un numero','');
+        var N2=prompt('Introduzca un segundo numero','');
+        var N3=prompt('Introduzca un tercer numero','');
+        var N4=prompt('Introduzca un cuarto numero','');
+        var suma=parseInt(N1)+parseInt(N2);
+        var Producto=N3*N4;
+        document.write('Esta es la suma del 1er y el 2do numero<br>');
+        document.write(suma);
+        document.write('<br><br>');
+        document.write('Esto es el producto del 3er numero x el 4to<br>');
+        document.write(Producto);
+    //PROGRAMA 3
+        var ALC=prompt('PROGRAMA 3, presione ok para continuar...');
+        var N1=prompt('Intrudozca un numero','');
+        var N2=prompt('Introduzca un segundo numero','');
+        var N3=prompt('Introduzca un tercer numero','');
+        var N4=prompt('Introduzca un cuarto numero','');
+        var producto=N1*N2*N3*N4;
+        var suma=parseInt(N1)+parseInt(N2)+parseInt(N3)+parseInt(N4);
+        document.write('La suma de los numeros introducidos es <br>');
+        document.write(suma);
+        document.write('<br><br>El producto de los cuatro numeros introducidos es <br>')
+        document.write(producto);
+    //PROGRAMA 4
+        var ALC=prompt('PROGRAMA 4, presione ok para continuar...');
+        var PA=prompt('Ingrese el precio de su articulo','');
+        var CA=prompt('Ingrese la cantidad que lleva el cliente','');
+        var AC= 80;
+        document.write('El precio de su articulo es: ');
+        document.write(PA);
+        document.write('<br>La cantidad que lleva el cliente es: ');
+        document.write(CA);
+        document.write('<br>Este es el monto a abonar: RD$ ');
+        document.write(AC);
+      </script>      
+</body>
+</html>
+----------------------------------------------------------------------------
+<html>
+<head>
+    <title>Practica 6 js</title>
+</head>
+<body>
+    <script>
+        //PROGRAMA 1
+        var ALC=prompt('Este es el programa 1, presione ok para continuar...','');
+        var N1=parseInt(prompt('Ingrese la primera calificacion:',''));
+        var N2=parseInt(prompt('Ingrese la segunda calificacion:',''));
+        var N3=parseInt(prompt('Ingrese la tercera calificacion:',''));
+        var SMATORIA=parseInt(N1)+parseInt(N2)+parseInt(N3)/3;
+        var PROMEDIO=SMATORIA/3;
+        if (PROMEDIO>=7)
+        {
+          document.write('Promocionado');
+        }
+        //PROGRAMA 2
+        var ALC=prompt('Este es el programa 2, presione ok para continuar...','');
+        var clave1=prompt('Ingrese su clave de acceso:','');
+        var clave2=prompt('Ingrese su clave de acceso otra vez:','');
+        if(clave1==clave2){
+            document.write('acceso correcto');
+        }
+      </script>
+</body>
+</html>
+----------------------------------------------------
+<html>
+<head>
+    <title>Practica 7 js</title>
+</head>
+<body>
+    
+<script>
+    //PROGRAMA 1
+var ALC=prompt('PROGRAMA 1, presione ok para continuar...','');
+var OP1=prompt('Ingrese el primer numero:','');
+var OP2=prompt('Ingrese el segundo numero:','');
+SUMA=parseInt(OP1)+parseInt(OP2);
+RESTA=OP1-OP2;
+MULTIPLICACION=OP1*OP2;
+DIVISION=OP1/OP2;
+  if (OP1>OP2)
+  {
+    document.write('La suma de estos dos numeros es '+SUMA, '<br>El residuo de estos dos numeros es '+RESTA);
+  }
+  else
+  {
+    document.write('El producto de estos dos numeros es '+MULTIPLICACION, '<br>El cociente de estos dos numeros es '+DIVISION);
+  }
+  //PROGRAMA 2
+  var ALC=prompt('PROGRAMA 2, presione ok para continuar...','');
+  var N1=prompt('Ingrese la primera nota del alumo:','');
+  var N2=prompt('Ingrese la segunda nota del alumo:','');
+  var N3=prompt('Ingrese la tercera nota del alumo:','');
+  var SUMA=parseInt(N1)+parseInt(N2)+parseInt(N3);
+  var PROMEDIO=SUMA/3;
+    if(PROMEDIO>=4){
+        document.write('Regular');
+    }
+    else
+    {
+        document.write('Reprobado');
+    }
+    //PROGRAMA 3
+    var ALC=prompt('PROGRAMA 3, presione ok para continuar...','');
+    var N=parseInt(prompt('Ingrese un numero del 1 al 99:',''));
+    
+    if(N<10){
+        document.write('El numero elegido tiene solo una cifra');
+    }
+    else
+    {
+        document.write('El numero elegido tiene dos cifras');
+    }
+</script>
+</body>
+</html>
+------------------------------------------------------
+<html>
+<head>
+    <title>Practica 8 js</title>
+</head>
+<body>
+    <script>
+
+    //PROGRAMA 1 
+  var ALC=prompt('PROGRAMA 1, presione ok para continuar...','');
+  var N1=prompt('Ingrese el primer numero:','');
+  var N2=prompt('Ingrese el segundo numero:','');
+  var N3=prompt('Ingrese el tercer numero:','');
+  if(N1>N2)
+  {
+    document.write('El numero mayor es '+N1);
+  }
+  else
+  {
+    if(N2>N3)
+    {
+    document.write('El numero mayor es '+N2);
+    }
+  else
+  {
+    document.write('El numero mayor es '+N3)
+  }
+  }
+
+
+  //PROGRAMA 2 
+  var ALC=prompt('PROGRAMA 2, presione ok para continuar...','');
+  var N1=prompt('Ingrese un valor:','');
+  if(N1>=1)
+  {
+    document.write('El numero es un entero positivo');
+  }
+  else
+  {
+    if(N1<-1)
+    {
+    document.write('El numero es un entero negativo');
+    }
+  else
+  {
+    document.write('El numero es 0');
+  }
+  }
+
+    //PROGRAMA 3
+    var ALC=prompt('PROGRAMA 3, presione ok para continuar...','');
+  var N=prompt('Ingrese un valor entre 1 y 999:','');
+  if(N>=100)
+  {
+    document.write('El numero ingresado tiene 3 cifras');
+  }
+  else
+  {
+    if(N>=10)
+    {
+    document.write('El numero ingresado tiene 2 cifras');
+    }
+  else
+  {
+    document.write('El numero ingresado tiene tan solo 1 cifra');
+  }
+  }
+
+
+    //PROGRAMA 4
+  var ALC=prompt('PROGRAMA 4, presione ok para continuar...','');
+  var N=prompt('Nombre del postulante:','');
+  var CP=prompt('Cantidad total de preguntas:','');
+  var CRC=prompt('Cantidad de respuestas correctas:','');
+  var CDRC=CRC/CP;
+  var PORCENTAJE=CDRC*100;
+  document.write('El nombre del postulante es: '+N);
+  if(PORCENTAJE>=90)
+  {
+    document.write('<br> Su nivel calificado es Superior');
+  }
+  else
+  {
+    if(PORCENTAJE>=75 && PORCENTAJE<90)
+    {
+    document.write('<br> Su nivel calificado es Medio');
+    }
+    if(PORCENTAJE>=50 && PORCENTAJE<75)
+    {
+      document.write('<br> Su nivel calificado es Regular');
+    }
+    if(PORCENTAJE<50)
+    {
+      document.write('<br> Su calificacion es fuera de nivel');
+    }
+  }
+    </script>
+</body>
+</html>
+-------------------------------------------
+-->
 <html>
 <head>
     <title>Practica 9 js</title>
@@ -24,7 +306,7 @@
       document.write('La fecha ingresada no es la misma que navidad,<br> Navidad es '+NAVIDAD+' (todos los años pero con este dia y mes)');
   }
 
-/*
+
 //PROGRAMA 2 
   var ALC=prompt('PROGRAMA 2, presione ok para continuar...','');
   var V1=prompt('Escriba un numero:','');
@@ -107,7 +389,7 @@ else
         document.write('Su sueldo sigue siendo '+SUELDO);
        }
    }
-*/
+
 </script>
 
 
