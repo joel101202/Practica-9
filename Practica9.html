@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Practica 9 js</title>
+</head>
+<body>
+    
+<script>
+
+  //PROGRAMA 1 
+  var ALC=prompt('PROGRAMA 1, presione ok para continuar...','');
+  var D=prompt('Escriba un dia (en formato numerico):','');
+  var M=prompt('Escriba un mes (en formato numerico):','');
+  var A=prompt('Escriba un año (en formato numerico):','');
+  var DN=25;
+  var MN=12;
+  //En la fecha de navidad no especifique un año porq navidad es anual
+  var NAVIDAD=25 +' / '+ 12 +' / '+ A
+  if(D==DN && MN==M)
+  {
+      document.write('La fecha ingresada es la misma que navidad');
+  }
+  else
+  {
+      document.write('La fecha ingresada no es la misma que navidad,<br> Navidad es '+NAVIDAD+' (todos los años pero con este dia y mes)');
+  }
+
+/*
+//PROGRAMA 2 
+  var ALC=prompt('PROGRAMA 2, presione ok para continuar...','');
+  var V1=prompt('Escriba un numero:','');
+  var V2=prompt('Escriba otro numero:','');
+  var V3=prompt('Escriba un ultimo numero:','');
+  var S12=parseInt(V1)+parseInt(V2);
+  var M3ERO=S12*V3;
+   if(V1==V2 && V1==V3 && V2==V3)
+   {
+       document.write(M3ERO);
+   }
+   else
+   {
+       document.write('no se cumplieron los requisitos del programa');
+   }
+
+//PROGRAMA 3
+  var ALC=prompt('PROGRAMA 3, presione ok para continuar...','');
+  var V1=prompt('Escriba un numero:','');
+  var V2=prompt('Escriba otro numero:','');
+  var V3=prompt('Escriba un ultimo numero:','');
+
+if(V1<10 && V2<10 && V3<10)
+{
+    document.write('Todos los numeros son menores a diez');
+}
+else
+{
+    document.write('Almenos un numero o mas no son menores a diez')
+}
+
+//PROGRAMA 4
+  var ALC=prompt('PROGRAMA 4, presione ok para continuar...','');
+  var X=prompt('Ingrese un valor entero:','');
+  var Y=prompt('Ingrese un segundo valor entero:','');
+  
+  if(X>0 && Y>0)
+  {
+    document.write('Los valores ingresados se encuentran en el 1er cuadrante ');
+  }
+  
+  if(X<0 && Y>0)
+   {
+    document.write('Los valores ingresados se encuentran en el 2do cuadrante ');
+   }
+   if(X<0 && Y<0)
+  {
+    document.write('Los valores ingresados se encuentran en el 3er cuadrante ');
+  }
+  
+  if(X>0 && Y<0)
+   {
+    document.write('Los valores ingresados se encuentran en el 4to cuadrante ');
+   }
+   
+
+   //PROGRAMA 5
+  var ALC=prompt('PROGRAMA 5, presione ok para continuar...','');
+  var SUELDO=prompt('Escriba el sueldo de un empleado:','');
+  var ANT=prompt('Escriba la antigüedad de dicho empleado (este formato es referente a los años):','');
+  var aumento=20*SUELDO;
+  var porciento=aumento/100;
+  var aumentofinal1=parseInt(SUELDO)+parseInt(porciento);
+  var aumento2=5*SUELDO;
+  var porciento2=aumento2/100;
+  var aumentofinal2=parseInt(SUELDO)+parseInt(porciento2);
+
+   if(SUELDO<500 && ANT>=10)
+   {
+       document.write('Usted recibio un aumento de un 20%, por tanto el sueldo a pagarle es '+aumentofinal1);
+   }
+   if(SUELDO<500 && ANT<10)
+   {
+       document.write('Su nuevo sueldo sera '+aumentofinal2);
+   }
+   else
+   {
+       if(SUELDO>=500)
+       {
+        document.write('Su sueldo sigue siendo '+SUELDO);
+       }
+   }
+*/
+</script>
+
+
+</body>
+</html>
